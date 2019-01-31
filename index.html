@@ -1,0 +1,65 @@
+you left off at add borders around your elements in basic css
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        li {
+            color: red;
+        }
+        .blue-text {
+                color: blue;
+            }
+       
+       label {
+             font-size: 30px;
+        }
+        h2 {
+            font-family: lobster, sans-serif;
+        }
+        .larger-image {
+    width: 500px;
+
+  }
+</style>
+</head>
+<body>
+    
+    <h2 style="color: blue;">CatPhotoApp</h2>
+    <main>
+      <p>Click here to view more <a href="#">cat photos</a>.</p>
+      
+      <a href="#"><img class="larger-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgr5nn5ipHZCpCAQs7RPDd2w74T1Ghe9ZQD7hAANfY0E9A4WwwWA" alt="beauty"></a>
+      
+      <div>
+        <p>Things cats love:</p>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <p class="blue-text">Top 3 things cats hate:</p>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+      </div>
+      
+      <form action="/submit-cat-photo">
+        <label class="blue-text"><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+        <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+        <label><input type="checkbox" name="personality" checked> Loving</label>
+        <label><input type="checkbox" name="personality"> Lazy</label>
+        <label><input type="checkbox" name="personality"> Energetic</label><br>
+        <input type="text" placeholder="cat photo URL" required>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+</body>
+</html>
